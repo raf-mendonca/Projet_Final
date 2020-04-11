@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha Photos</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container" id="idContainer">
+    <div class="row align-items-center text-center  d-print-none">
+        <div class="col-12">
+            <h2 class="display-4">Créez votre mot en 5 étapes rapides</h2>
+        </div>
+    </div>
+
+    <div class="input-group mb-5  d-print-none">
+        <input type="text" class="form-control text-center" id="mots" placeholder="Un mot entre 3 et 12 caractères"
+               aria-describedby="buttonGo">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" id="buttonGo">Go</button>
+        </div>
+    </div>
+
+    <div class="container cadre d-flex justify-content-center align-items-center">
+        <div class="row mt-5 mb-5" id="imageLettres">
+            <div>
+                <ul id="imgList" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Background changing-->
+    <div class="container  d-print-none">
+        <div class="col-xs-12 col-sm-8">
+            <div id="backgroundHide">
+                <h4 class="h4Black"><strong>Changez le fond</strong></h4>
+                <label class="labelNoir">Cliquez sur les couleurs pour changer le fond:</label>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="blanc" class="btn btn-blanc mr-1">Blanc</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="bleu" class="btn btn-bleu mr-1">Bleu</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="navy" class="btn btn-navy mr-1">Navy</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="noir" class="btn btn-dark mr-1">Noir</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="gris" class="btn btn-gris mr-1">Gris</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="dark" class="btn btn-secondary mr-1">Dark</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="rose" class="btn btn-rose mr-1">Rose</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="rouge" class="btn btn-danger mr-3">Rouge</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="printMe"><i class="fas fa-print"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin background changing-->
+
+    <!--Modal et carousel-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sélectionnez votre photo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/js/jquery-3.4.1.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
